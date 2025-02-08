@@ -45,3 +45,5 @@ public class problem10814 {
         }
     }
 }
+
+// 받을 때 입력해보자

@@ -31,7 +31,7 @@ public class problem1316 {
             char c = word.charAt(i);
             // 1. 현재 문자가 이전 문자와 다르고
             // 2. 이미 사용된 적이 있는 경우
-            if (i > 0 && word.charAt(i - 1) != c && used[c - 'a']) {
+            if (/*i > 0 && */word.charAt(i - 1) != c && used[c - 'a']) {
                 return false;
             }
             used[c - 'a'] = true;
