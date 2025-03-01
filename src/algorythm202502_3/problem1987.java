@@ -20,7 +20,9 @@ public class problem1987 {
             board[i] = br.readLine().toCharArray();
         }
 
+        visitedAlphabet[board[0][0] - 'A'] = true;
         dfs(0, 0, 1);
+
         bw.write(maxPathLength + "\n");
         bw.flush();
         bw.close();
