@@ -3,7 +3,7 @@ package algorythm202503_2;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class problemm1107 {
+public class problem1107 {
     static boolean[] broken = new boolean[10]; // 고장난 버튼 체크 배열
 
     public static void main(String[] args) throws IOException {
