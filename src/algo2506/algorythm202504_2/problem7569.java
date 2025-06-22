@@ -1,4 +1,4 @@
-package algo2506.algorythm202506_2;
+package algo2506.algorythm202504_2;
 
 import java.io.*;
 import java.util.*;

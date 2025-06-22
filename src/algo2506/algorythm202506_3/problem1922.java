@@ -1,7 +1,24 @@
-package algo2506.algorythm202506_2;
+package algo2506.algorythm202506_3;
 
 import java.io.*;
 import java.util.*;
+
+class Edge implements Comparable<Edge> {
+    int from, to, cost;
+
+    Edge(int from, int to, int cost) {
+        this.from = from;
+        this.to = to;
+        this.cost = cost;
+    }
+
+    // 비용(cost) 기준으로 오름차순 정렬
+    @Override
+    public int compareTo(Edge o) {
+        return this.cost - o.cost;
+    }
+}
+
 
 public class problem1922 {
     static int[] parent; // Union-Find를 위한 부모 배열
@@ -62,28 +79,3 @@ public class problem1922 {
         }
     }
 }
-
-// 간선 정보를 저장하는 클래스
-class Edge implements Comparable<Edge> {
-    int from, to, cost;
-
-    Edge(int from, int to, int cost) {
-        this.from = from;
-        this.to = to;
-        this.cost = cost;
-    }
-
-    // 비용(cost) 기준으로 오름차순 정렬
-    @Override
-    public int compareTo(Edge o) {
-        return this.cost - o.cost;
-    }
-}
-
-
-
-// 1 > 2 > 3 > 4 > 5 > 6
-
-// find(6)
-// find(6) >> parent[6] != 6 find 5 >>>. find(2) >> parent[2] != 2 find (1) >> 1
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
