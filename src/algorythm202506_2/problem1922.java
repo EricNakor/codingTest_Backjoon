@@ -79,3 +79,11 @@ class Edge implements Comparable<Edge> {
         return this.cost - o.cost;
     }
 }
+
+
+
+// 1 > 2 > 3 > 4 > 5 > 6
+
+// find(6)
+// find(6) >> parent[6] != 6 find 5 >>>. find(2) >> parent[2] != 2 find (1) >> 1
+// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
