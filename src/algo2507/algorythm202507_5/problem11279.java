@@ -1,4 +1,4 @@
-package algo2507.algorythm202507_4;
+package algo2507.algorythm202507_5;
 
 import java.io.BufferedReader;
 import java.io.IOException;
