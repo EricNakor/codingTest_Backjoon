@@ -1,4 +1,4 @@
-package algo2512.algo12_3;
+package _2026.algo2601.algo1_2;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
